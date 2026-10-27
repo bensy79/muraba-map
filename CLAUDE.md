@@ -19,7 +19,7 @@ npm run preview  # serve the built dist/
 
 ## Architecture
 
-- `src/data/locations.json` is the only content source and is edited by the owner. Every place has `name`/`text` as `{hu, sl, en}` objects, plus an optional `image` (a filename in `public/images/`) and `links`. `src/locations.ts` gives it a `Place` type.
+- `src/data/locations.json` is the only content source and is edited by the owner. Every place has `name`/`text` as `{hu, sl, en}` objects, plus optional `images` (filenames in `public/images/`, shown as a swipeable gallery) and `links`. `src/locations.ts` gives it a `Place` type.
 - `src/i18n.ts` holds the UI strings and language detection. The order is `?lang=` param (used by the WordPress iframe), then `localStorage`, then browser language, then `en`. Any new UI text must be added to `UI` in all three languages.
 - `src/map.ts` sets up Leaflet with `L.divIcon` pins, because the default marker images break under Vite. On touch devices `dragging` starts disabled so the parent WordPress page can still scroll. `main.ts` turns it on after the user taps the "tap to use the map" hint.
 - `src/panel.ts` is the info panel. CSS makes it a side panel on desktop and a bottom sheet at ≤ 640 px. Content is built with DOM APIs (`textContent`), not `innerHTML`.

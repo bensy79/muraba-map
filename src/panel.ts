@@ -23,12 +23,22 @@ export function createPanel(root: HTMLElement, onClose: () => void): Panel {
       closeBtn.setAttribute('aria-label', t('close', lang));
       body.replaceChildren();
 
-      if (place.image) {
-        const img = document.createElement('img');
-        img.src = `${import.meta.env.BASE_URL}images/${place.image}`;
-        img.alt = place.name[lang];
-        img.loading = 'lazy';
-        body.append(img);
+      const images = place.images ?? [];
+      if (images.length) {
+        // Horizontal scroll-snap strip; swipe (or trackpad-scroll) between photos.
+        const gallery = document.createElement('div');
+        gallery.className = 'gallery';
+        images.forEach((file, i) => {
+          const img = document.createElement('img');
+          img.src = `${import.meta.env.BASE_URL}images/${file}`;
+          img.alt =
+            images.length > 1
+              ? `${place.name[lang]} (${i + 1}/${images.length})`
+              : place.name[lang];
+          img.loading = 'lazy';
+          gallery.append(img);
+        });
+        body.append(gallery);
       }
 
       const h2 = document.createElement('h2');

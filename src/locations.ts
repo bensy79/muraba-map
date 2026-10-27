@@ -10,8 +10,8 @@ export interface Place {
   id: string;
   lat: number;
   lng: number;
-  /** Filename inside public/images/, or empty for no photo. */
-  image?: string;
+  /** Filenames inside public/images/, shown as a swipeable gallery. */
+  images?: string[];
   links?: PlaceLink[];
   name: Localized;
   text: Localized;
