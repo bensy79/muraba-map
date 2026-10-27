@@ -1,0 +1,54 @@
+[
+  {
+    "id": "prosenjakovci",
+    "lat": 46.748,
+    "lng": 16.31,
+    "image": "",
+    "links": [],
+    "name": { "hu": "Pártosfalva", "sl": "Prosenjakovci", "en": "Prosenjakovci" },
+    "text": {
+      "hu": "Ide kerül a magyar leírás.",
+      "sl": "Tukaj bo slovenski opis.",
+      "en": "English description goes here."
+    }
+  },
+  {
+    "id": "szentgotthard",
+    "lat": 46.953,
+    "lng": 16.274,
+    "image": "",
+    "links": [],
+    "name": { "hu": "Szentgotthárd", "sl": "Monošter", "en": "Szentgotthárd" },
+    "text": {
+      "hu": "Ide kerül a magyar leírás.",
+      "sl": "Tukaj bo slovenski opis.",
+      "en": "English description goes here."
+    }
+  },
+  {
+    "id": "zalaszentlaszlo",
+    "lat": 46.877,
+    "lng": 17.107,
+    "image": "",
+    "links": [],
+    "name": { "hu": "Zalaszentlászló", "sl": "Zalaszentlászló", "en": "Zalaszentlászló" },
+    "text": {
+      "hu": "Ide kerül a magyar leírás.",
+      "sl": "Tukaj bo slovenski opis.",
+      "en": "English description goes here."
+    }
+  },
+  {
+    "id": "nagykanizsa",
+    "lat": 46.454,
+    "lng": 16.991,
+    "image": "",
+    "links": [],
+    "name": { "hu": "Nagykanizsa", "sl": "Velika Kaniža", "en": "Nagykanizsa" },
+    "text": {
+      "hu": "Ide kerül a magyar leírás.",
+      "sl": "Tukaj bo slovenski opis.",
+      "en": "English description goes here."
+    }
+  }
+]
